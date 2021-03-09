@@ -9,10 +9,14 @@ import {
 } from "react-router-dom";
 import NotFound from './Component/NotFound';
 import CountryDetails from './Component/CountryDetails';
+import ParentComponent from './EventHandling/ParentComponent';
+import ConditionalRendering from './Rendering/ConditionalRendering';
 
 function App() {
   return (
     <div className="App">
+      <ConditionalRendering></ConditionalRendering>
+      <ParentComponent></ParentComponent>
       
     <Router>
       <Switch>
